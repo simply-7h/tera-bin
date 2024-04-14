@@ -18,7 +18,7 @@ def download(update: Update, context: CallbackContext) -> None:
         update.message.reply_text('Invalid file type. Only MP4 files are supported.')
 
 def main() -> None:
-    updater = Updater(token='YOUR_TELEGRAM_BOT_TOKEN', use_context=True)
+    updater = Updater(token='7017046466:AAG7fozqorxqO9wdLKBFRwpFOZUvqafsNl8', use_context=True)
     dispatcher = updater.dispatcher
     dispatcher.add_handler(CommandHandler('download', download))
     updater.start_polling()
